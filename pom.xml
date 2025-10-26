@@ -65,6 +65,12 @@
 		    <version>0.10.5</version>
 		    <scope>runtime</scope>
 		</dependency>
+		<!-- Fix for CVE-2022-25857: Update snakeyaml to 1.31 to address DoS vulnerability -->
+		<dependency>
+		    <groupId>org.yaml</groupId>
+		    <artifactId>snakeyaml</artifactId>
+		    <version>1.31</version>
+		</dependency>
 	</dependencies>
 
 	<build>
