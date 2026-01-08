@@ -5,6 +5,11 @@ import java.sql.DriverManager;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.spec.InvalidKeySpecException;
+import java.util.Base64;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.UUID;
@@ -115,3 +120,4 @@ public class Postgres {
         }
     }
 }
+
