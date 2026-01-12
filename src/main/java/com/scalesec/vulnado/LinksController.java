@@ -12,7 +12,7 @@ import java.io.IOException;
 @RestController
 @EnableAutoConfiguration
 public class LinksController {
-  @RequestMapping(value = "/links", produces = "application/json")
+  @RequestMapping(value = "/links", method = RequestMethod.GET, produces = "application/json")
   List<String> links(@RequestParam String url) throws IOException{
     return LinkLister.getLinks(url);
   }
@@ -21,3 +21,4 @@ public class LinksController {
     return LinkLister.getLinksV2(url);
   }
 }
+
