@@ -1,5 +1,6 @@
 #FROM openjdk:8
-FROM eclipse-temurin:8-jdk-jammy
+#FROM eclipse-temurin:8-jdk-jammy
+FROM eclipse-temurin:8-jre-jammy
 
 RUN apt-get update && \
     apt-get install build-essential maven default-jdk cowsay netcat -y && \
